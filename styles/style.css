@@ -9,7 +9,7 @@
     --mainBlue: #023e8a;
     --mainBrown: #6a040f;
     --darkGray: #e9ecef;
-    --mainTransition: all 0.3s linear;
+    --mainTransition: all 0.3s ease;
     --mainSpacing: 3px;
     --lightShadow: 0 4px 8px 0px rgba(0, 0, 0, 0.4);
     --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.2);
@@ -23,13 +23,53 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    font-family: 'Poppins', sans-serif;;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
 }
 main {
     display: flex;
-    flex-direction: column;
+    align-items: center;
     width: 100%;
     height: auto;
+    padding: 1.5rem;
+}
+h1 {
+    font-size: 3em;
+    line-height: 1;
+    margin-bottom: 0.2em;
+    font-weight: 400;
+    text-align: center;
+  }
+  h2 {
+      font-size: 1.6rem;
+      font-weight: normal;
+      color: var(--mainBlue);
+  }
+  hr {
+      margin: 0.15rem;
+  }
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin-top: 2rem;
+}
+.aside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    position: fixed;
+    top: 10rem;
+    right: 0;
+}
+section {
+    margin: 1rem;
+    text-align: center;
 }
 /**Navigation*/
 header {
@@ -38,6 +78,10 @@ header {
     justify-content: center;
     width: 100%;
     box-shadow: var(--lightShadow);
+    z-index: 100;
+    background-color: var(--mainWhite);
+    position: fixed;
+    margin-bottom: 1rem;
 }
 nav {
     display: flex;
@@ -46,12 +90,17 @@ nav {
     width: 100%;
     font-size: 1.2rem;
 }
+img {
+    width: 60%;
+    border-radius: 50%;
+    object-fit: cover;
+    filter:drop-shadow(var(--darkShadow));
+}
 .links {
     display: flex;
     align-items: center;
     justify-content: space-around;
     margin-left: auto;
-   
 }
 ul {
     list-style: none;
@@ -70,12 +119,15 @@ a {
     transition: var(--mainTransition);
 }
 a:hover {
-    border-bottom: 2px solid var(--mainBlue);
     font-weight: 500;
     color: black;
 }
 .active-link {
-    border-bottom: 2px solid var(--mainBlue);
     font-weight: 500;
     color: black;
+}
+
+/**About*/
+.intro {
+    margin-top: 2.5rem;
 }
