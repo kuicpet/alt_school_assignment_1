@@ -71,6 +71,15 @@ section {
     margin: 1rem;
     text-align: center;
 }
+.experience a {
+    padding: 0;
+    text-decoration: underline;
+    color: var(--mainBlue);
+}
+.resume {
+    margin: 1rem;
+    font-size: 0.9rem;
+}
 /**Navigation*/
 header {
     display: flex;
@@ -130,4 +139,62 @@ a:hover {
 /**About*/
 .intro {
     margin-top: 2.5rem;
+}
+
+/**Contact*/
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25em;
+    box-shadow: var(--lightShadow);
+    border-radius: 4px;
+    padding: 1rem;
+}
+.contact_form div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0.5rem;
+    width: 100%;
+}
+label {
+    color: var(--mainBlue);
+    font-size: 0.95rem;
+}
+input, select, textarea,button {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0.2rem 0.5rem;
+    border: none;
+    outline: none;
+    border: 1px solid var(--mainGray);
+    font-size: 0.9rem;
+}
+input, select {
+    height: 2rem;
+    border-radius: 4px;
+}
+textarea {
+    height: 9rem;
+}
+button {
+    height: 2.5rem;
+    font-size: 1.2rem;
+    outline: none;
+    border: none;
+    background-color: var(--mainBlue);
+    color: var(--mainWhite);
+    border-radius: 4px;
+    cursor: pointer;
+}
+input:focus, textarea:focus {
+    border: none;
+    outline: none;
+    box-shadow: var(--lightShadow);
+}
+button:hover {
+    background-color: var(--mainBlack);
 }
