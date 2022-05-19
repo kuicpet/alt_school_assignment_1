@@ -204,3 +204,43 @@ input:focus, textarea:focus {
 button:hover {
     background-color: var(--mainBlack);
 }
+
+/**Calculator Ui Table**/
+.container_calculator {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3.5rem;
+}
+.container_calculator h1 {
+    font-size: 2rem;
+    font-weight: 100;
+}
+.ui form, .ui_2 form {
+    width: 100%;
+    padding: 1rem;
+}
+.ui input, .ui_2 input {
+    width: 100%;
+    border: 2px solid var(--mainBlue);
+    margin: 1rem 0;
+}
+.ui button, .ui_2 button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0.1rem;
+}
+/**Calculator Ui FlexBlox**/
+.row {
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+.ui_2 button {
+    margin: 0.15rem;
+}
