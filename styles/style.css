@@ -315,6 +315,9 @@ justify-content: space-around;
        padding: 0;
        margin: 0;
    }
+   h2 {
+    font-size: 1.2rem;
+  }
 }
 
 @media screen and (min-width: 800px) {
