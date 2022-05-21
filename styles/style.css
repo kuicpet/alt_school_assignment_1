@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap');
 :root {
     --primaryColor: #fff;
@@ -25,8 +25,9 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     width: 100%;
+    background-color: var(--offWhite);
 }
 main {
     display: flex;
@@ -158,6 +159,7 @@ form {
     border-radius: 4px;
     padding: 1rem;
     transition: var(--mainTransition);
+    background-color: var(--mainWhite);
 }
 form a {
     padding: 0;
