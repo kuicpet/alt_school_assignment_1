@@ -52,17 +52,19 @@
                 <h1>Login</h1>
             </section>
             <section class="login_form">
-                <form>
-                    <div>
-                        <label>Username</label>
-                        <input type="text" placeholder="Enter your Username" required />
+                <form id="form">
+                    <div class="form_control">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" placeholder="Enter your Username" autofocus />
+                        <small class="small show">Error message</small>
+                    </div>
+                    <div class="form_control">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Enter your password"/>
+                        <small class="small show">Error message</small>
                     </div>
                     <div>
-                        <label>Password</label>
-                        <input type="password" placeholder="Enter your password"  required/>
-                    </div>
-                    <div>
-                        <button type="submit">Sign In</button>
+                        <button type="submit" class="submit_btn">Sign In</button>
                     </div>
                     <div>
                         <p>Don't have an account? &nbsp;<a href="/register.html">Register</a></p>
@@ -93,4 +95,5 @@
         </div>
     </footer>
 </body>
+<script src="js/login.js"></script>
 </html>
