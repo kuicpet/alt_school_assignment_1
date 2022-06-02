@@ -71,7 +71,7 @@ h1 {
     right: 0;
 }
 section {
-    margin: 1rem;
+    margin: 1rem auto;
     text-align: center;
 }
 .experience a {
@@ -293,6 +293,9 @@ justify-content: space-around;
 
 /**Media Queries**/
 @media screen and (max-width: 800px) {
+    section {
+        width: 100%;
+    }
     li {
         margin: 0;
     }
@@ -320,8 +323,7 @@ justify-content: space-around;
        display: none;
    }
    .calculator {
-       width: 100%;
-      
+       width: 100%; 
    }
    .intro {
        margin-top: 5rem;

@@ -3,7 +3,7 @@ let username = document.getElementById('username')
 let password = document.getElementById('password')
 let submitBtn = document.querySelector('.submit_btn')
 
-function checkInputs() {
+const checkInputs = () => {
   // trim to remove whitespaces
   let usernameVal = username.value.trim()
   let passwordVal = password.value.trim()
@@ -27,23 +27,8 @@ function checkInputs() {
   }
 }
 
-// Show input error messages
-function showError(input, message) {
-  let formControl = input.parentElement
-  formControl.className = 'form_control error'
-  let small = formControl.querySelector('.small')
-  small.innerText = message
-  small.style.visibility = 'inherit'
-}
 
-// Show success messages
-function showSuccess(input) {
-  let formControl = input.parentElement
-  formControl.className = 'form_control success'
-  let small = formControl.querySelector('.small')
-  small.innerText = ''
-  small.style.visibility = 'hidden'
-}
+
 // Submit Form
 const url = ''
 async function submitForm() {
